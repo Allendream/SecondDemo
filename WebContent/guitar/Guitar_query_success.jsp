@@ -1,46 +1,35 @@
 <%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8" %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 <title>查询结果</title>
 </head>
 <body>
-<table class="default" width="100%">
-	<col width="10%">
-	<col width="20%">
-	<col width="5%">
-	<col width="20%">
-	<col width="30%">
-	<col width="15%">
-	<tr class="title">
-		<td>序号</td>
-		<td>价格</td>
-		<td>制造商</td>
-		<td>型号</td>
-		<td>类型</td>
-		<td>前木料</td>
-		<td>后木料</td>
-	</tr>
-	
-	<!-- 遍历开始 -->
-	
-	<tr>
-		<td><s:property value="#session.query_guitar.serialNumber"/></td>
-		<td><s:property value="#session.query_guitar.price"/></td>
-		<td><s:property value="#session.query_guitar.builder"/></td>
-		<td><s:property value="#session.query_guitar.model"/></td>
-		<td><s:property value="#session.query_guitar.type"/></td>
-		<td><s:property value="#session.query_guitar.backwood"/></td>
-		<td><s:property value="#session.query_guitar.topkwood"/></td>
-	</tr>
-	
-	<!-- 遍历结束 -->
-</table>
+ <div>
+                 <table class="table" width="100%"  border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bordercolordark="#819BBC" bordercolorlight="#FFFFFF">
+                  <tr>
+                    <td height="28"><div align="center">吉他序号</div></td>
+                    <td><div align="center">单价</div></td>
+                    <td><div align="center">制造商</div></td>
+                    <td><div align="center">型号</div></td>
+                    <td><div align="center">类型</div></td>
+                    <td><div align="center">前木料</div></td>
+                    <td><div align="center">后木料</div></td>
+                  </tr>  
+                  <tr>
+                    <td height="28"><div align="center"><s:property value="#session.query_guitar.serialNumber"/></div></td>
+                    <td><div align="center"><s:property value="#session.query_guitar.price"/></div></td>
+                    <td><div align="center"><s:property value="#session.query_guitar.builder"/></div></td>
+                    <td><div align="center"><s:property value="#session.query_guitar.model"/></div></td>
+                    <td><div align="center"><s:property value="#session.query_guitar.type"/></div></td>
+                    <td><div align="center"><s:property value="#session.query_guitar.backwood"/></div></td>
+                    <td><div align="center"><s:property value="#session.query_guitar.topkwood"/></div></td>
+                  </tr>  
+                  
+                </table>
+				</div>
 </body>
 </html>

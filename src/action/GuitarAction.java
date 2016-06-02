@@ -12,7 +12,7 @@ public class GuitarAction extends SuperAction{
 	private static final long serialVersionUID = 1L;
 	public String query()
 	{
-		//获得传递过来的学生编号
+		//获得传递过来的吉他编号
 		String serialNumber=request.getParameter("serialNumber");
 		  GuitarDao gdao =new GuitarDaoImpl();
 		  Guitar g =gdao.querybyNumber(serialNumber);

@@ -15,5 +15,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/junit"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mysql-jdbc"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/struits-core"/>
+	<classpathentry kind="lib" path="D:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/jsp-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
